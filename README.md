@@ -43,8 +43,8 @@ public Order(List<MenuItem> orderItems, int tableNumber)
     - [x] En List<T> för att representera menyn
     - [x] En Queue<T> för att hantera beställningar (av klassen Order)
 - [ ] Restaurant-klassen ska du bygga själv och följande metoder ska ingå:
-    - [ ] `AddtoMenu(MenuItem menuItem)`: Lägger till en ny maträtt i menyn och loggar detta till konsolen.
-    - [ ] `ShowMenu()`: Skriver ut alla maträtter i menyn till konsolen.
+    - [x] `AddtoMenu(MenuItem menuItem)`: Lägger till en ny maträtt i menyn och loggar detta till konsolen.
+    - [x] `ShowMenu()`: Skriver ut alla maträtter i menyn till konsolen.
     - [ ] `CreateOrder(Order order)`: Lägger till en ny beställning i kön och loggar detta till konsolen.
     - [ ] `HandleOrder()`: Hanterar (tar bort) den första beställningen i kön och loggar detta till konsolen.
     - [ ] `ShowOrders()`: Skriver ut alla beställningar i kön till konsolen.

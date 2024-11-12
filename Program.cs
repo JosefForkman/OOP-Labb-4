@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!");
-            var menuItems = new List<MenuItem>
-            {
-                new MenuItem(1, "packas", 15.50M),
-                new MenuItem(2, "TE", 1.50M),
-            };
-            var restaurant = new Restaurant(menuItems);
+            var pancakes = new MenuItem(1, "pancakes", 15.50M);
+            var te = new MenuItem(2, "TE", 1.50M);
+            var egg = new MenuItem(3, "egg", 2.50M);
 
-            var order = new Order(menuItems.FindAll(item => item.Id == 1), 1);
-            restaurant.CreateOrder(order);
+            var restaurant = new Restaurant();
+            restaurant.AddToMenu(pancakes);
+            restaurant.AddToMenu(te);
+            restaurant.AddToMenu(egg);
+
+            restaurant.ShowMenu();
         }
     }
 }

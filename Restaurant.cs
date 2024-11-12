@@ -1,15 +1,19 @@
-public class Restaurant(List<MenuItem> menuItems, Queue<Order>? orders = null)
+public class Restaurant()
 {
-    public List<MenuItem> MenuItems { get; set; } = menuItems;
-    public Queue<Order> Orders { get; set; } = orders ?? new Queue<Order>();
+    public List<MenuItem> MenuItems { get; set; } = [];
+    public Queue<Order> Orders { get; set; } = [];
 
     public void AddToMenu(MenuItem menuItem)
     {
-
+        MenuItems.Add(menuItem);
+        menuItem.ToString();
     }
     public void ShowMenu()
     {
-
+        foreach (var item in MenuItems)
+        {
+            Console.WriteLine(item.ToString());
+        }
     }
     public void CreateOrder(Order order)
     {
