@@ -1,7 +1,6 @@
 
 public class Order
 {
-    // I denna klass använder vi i stället private fields
     static int orderIdCounter = 1;
     private int _orderId;
     private List<MenuItem> _orderItems;
@@ -15,5 +14,16 @@ public class Order
         orderIdCounter++;
         _orderItems = orderItems;
         _tableNumber = tableNumber;
+    }
+
+    public void ShowOrder()
+    {
+        Console.WriteLine($"Order id: {_orderId}");
+        Console.WriteLine($"Table number: {_tableNumber}");
+        Console.WriteLine("Order items:");
+        foreach (var item in _orderItems)
+        {
+            Console.WriteLine($"- {item.Name}");
+        }
     }
 }
