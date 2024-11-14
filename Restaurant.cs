@@ -1,3 +1,5 @@
+using OOP_Labb_4.utls;
+
 public class Restaurant()
 {
     public List<MenuItem> MenuItems { get; set; } = [];
@@ -17,25 +19,41 @@ public class Restaurant()
     }
     public void CreateOrder(Order order)
     {
-        var newOrder = Orders.Prepend(order);
+        Orders.Enqueue(order);
 
-        Console.WriteLine($"The new order:\n id: {order}");
+        Console.WriteLine("Order created:");
+        order.ShowOrder();
+        Console.WriteLine("We have received your order and will be at your table soon.");
+
     }
 
     public void HandleOrder()
     {
-
+        if (Orders.Count == 0)
+        {
+            Console.WriteLine("No orders to handle.");
+        }
+        else
+        {
+            var order = Orders.Dequeue();
+            order.ShowOrder();
+        }
     }
     public void ShowOrders()
     {
-
+        foreach (var order in Orders)
+        {
+            order.ShowOrder();
+            HelpConsole.InnerDevider();
+        }
     }
-    private void ShowNextOrder()
+    public void ShowNextOrder()
     {
-
+        var order = Orders.Peek();
+        order.ShowOrder();
     }
     public void ShowOrderCount()
     {
-
+        Console.WriteLine($"There are {Orders.Count} orders.");
     }
 }
