@@ -5,7 +5,6 @@ public class Order
     private int _orderId;
     private List<MenuItem> _orderItems;
     private int _tableNumber;
-    private IEnumerable<MenuItem> enumerable;
 
     public Order(List<MenuItem> orderItems, int tableNumber)
     {
