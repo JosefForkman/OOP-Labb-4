@@ -45,31 +45,31 @@ public Order(List<MenuItem> orderItems, int tableNumber)
 - [ ] Restaurant-klassen ska du bygga själv och följande metoder ska ingå:
     - [x] `AddtoMenu(MenuItem menuItem)`: Lägger till en ny maträtt i menyn och loggar detta till konsolen.
     - [x] `ShowMenu()`: Skriver ut alla maträtter i menyn till konsolen.
-    - [ ] `CreateOrder(Order order)`: Lägger till en ny beställning i kön och loggar detta till konsolen.
-    - [ ] `HandleOrder()`: Hanterar (tar bort) den första beställningen i kön och loggar detta till konsolen.
-    - [ ] `ShowOrders()`: Skriver ut alla beställningar i kön till konsolen.
-    - [ ] `ShowNextOrder()`: Skriver ut beställningen som är näst i kön till konsolen.
-    - [ ] `ShowOrderCount()`: Skriver ut antalet beställningar i kön till konsolen.
+    - [x] `CreateOrder(Order order)`: Lägger till en ny beställning i kön och loggar detta till konsolen.
+    - [x] `HandleOrder()`: Hanterar (tar bort) den första beställningen i kön och loggar detta till konsolen.
+    - [x] `ShowOrders()`: Skriver ut alla beställningar i kön till konsolen.
+    - [x] `ShowNextOrder()`: Skriver ut beställningen som är näst i kön till konsolen.
+    - [x] `ShowOrderCount()`: Skriver ut antalet beställningar i kön till konsolen.
 
 (Tips! Skapa en metod i Order-klassen som du kan kalla på för att skriva ut en beställning. Den kan du sedan använda i alla metoder som skriver ut en eller flera beställningar.)
 
 ### Simulering
-1. Skapa ett nytt objekt av Restaurant-klassen.
-2. Lägg till fyra olika rätter i menyn.
-3. Skriv ut menyn.
-4. Skapa 3 st nya ordrar, med minst två olika rätter i varje, och lägg till dem i orderkön (du kan hitta på bordsnummer för beställningarna).
-5. Visa alla aktuella ordrar.
-6. Visa antalet ordrar i kön.
-7. Visa nästa order på kö.
-8. Hantera en order.
-9. Visa antalet ordrar i kön.
-10. Lägg till en ny order.
-11. Visa antalet ordrar i kön.
-12. Hantera två ordrar.
-13. Visa antalet ordrar i kön.
-14. Visa nästa order på kö.
-15. Hantera en order.
-16. Visa antalet ordrar i kön.
+1. ~~Skapa ett nytt objekt av Restaurant-klassen.~~
+2. ~~Lägg till fyra olika rätter i menyn.~~
+3. ~~Skriv ut menyn.~~
+4. ~~Skapa 3 st nya ordrar, med minst två olika rätter i varje, och lägg till dem i orderkön (du kan hitta på bordsnummer för beställningarna).~~
+5. ~~Visa alla aktuella ordrar.~~
+6. ~~Visa antalet ordrar i kön.~~
+7. ~~Visa nästa order på kö.~~
+8. ~~Hantera en order.~~
+9. ~~Visa antalet ordrar i kön.~~
+10. ~~Lägg till en ny order.~~
+11. ~~Visa antalet ordrar i kön.~~
+12. ~~Hantera två ordrar.~~
+13. ~~Visa antalet ordrar i kön.~~
+14. ~~Visa nästa order på kö.~~
+15. ~~Hantera en order.~~
+16. ~~Visa antalet ordrar i kön.~~
 
 ## Extra utmaningar
 - [ ]  Lägg till en metod som flyttar en valfri order längst fram i kön.
