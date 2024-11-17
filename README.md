@@ -72,7 +72,7 @@ public Order(List<MenuItem> orderItems, int tableNumber)
 16. ~~Visa antalet ordrar i kön.~~
 
 ## Extra utmaningar
-- [ ]  Lägg till en metod som flyttar en valfri order längst fram i kön.
+- [x]  Lägg till en metod som flyttar en valfri order längst fram i kön.
 - [ ]  Lägg till en funktion som grupperar beställningar från samma bord. När en ny beställning läggs till, placera den direkt efter andra beställningar från samma bord om sådana finns.
 - [ ]  Implementera en metod (eller ändra i befintliga) som låter användaren markera en beställning som "brådskande". Dessa beställningar ska automatiskt placeras först i kön.
 - [ ]  Sätt en maxgräns för antalet beställningar i kön. Om kön är full när en ny beställning läggs till, placera den i en separat "väntande" lista. (Kom ihåg att också implementera funktionalitet för att fylla på kön när lediga platser dyker upp.)

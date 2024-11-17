@@ -56,4 +56,25 @@ public class Restaurant()
     {
         Console.WriteLine($"There are {Orders.Count} orders.");
     }
+    public void MoveOrderToFront(Order order)
+    {
+        var orderLits = Orders.ToList();
+
+        // Get the index of the chosen order
+        var orderIndex = orderLits.IndexOf(order);
+        
+        // If order not found, exit early
+        if (orderIndex == -1)
+        {
+            return;
+        }
+
+        // insert a copy in front 
+        orderLits.Insert(0, orderLits[orderIndex]);
+
+        // Remove duplicate item
+        orderLits.RemoveAt(orderIndex + 1);
+
+        Orders = new Queue<Order>(orderLits);
+    }
 }
