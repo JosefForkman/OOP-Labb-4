@@ -11,26 +11,28 @@ namespace Program
             var restaurant = new Restaurant();
 
             // 02
-            var pancakes = new MenuItem(1, "pancakes", 15.50M);
-            var te = new MenuItem(2, "TE", 1.50M);
-            var egg = new MenuItem(3, "egg", 2.50M);
-            var bacon = new MenuItem(4, "bacon", 3.50M);
+            var calzone = new MenuItem(1, "Calzone", 110.35M);
+            var vegetariana = new MenuItem(2, "Vegetariana", 115);
+            var mexicana = new MenuItem(3, "Mexicana", 2.50M);
+            var te = new MenuItem(4, "Te", 3.50M);
 
-            restaurant.AddToMenu(pancakes);
+            restaurant.AddToMenu(calzone);
+            restaurant.AddToMenu(vegetariana);
+            restaurant.AddToMenu(mexicana);
             restaurant.AddToMenu(te);
-            restaurant.AddToMenu(egg);
-            restaurant.AddToMenu(bacon);
 
             HelpConsole.Devider(3);
             restaurant.ShowMenu();
 
             HelpConsole.Devider(4);
-            var orderOne = new Order([pancakes, te, egg, bacon], 1);
-            var orderTwo = new Order([te, egg], 2);
-            var orderThree = new Order([bacon, pancakes], 3);
+            var orderOne = new Order([calzone, mexicana], 1);
+            var orderTwo = new Order([calzone, vegetariana], 2);
+            var orderThree = new Order([mexicana, te], 3);
 
             restaurant.CreateOrder(orderOne);
+            Console.WriteLine();
             restaurant.CreateOrder(orderTwo);
+            Console.WriteLine();
             restaurant.CreateOrder(orderThree);
 
             HelpConsole.Devider(5);
@@ -52,7 +54,7 @@ namespace Program
             restaurant.ShowOrderCount();
 
             HelpConsole.Devider(10);
-            var orderFour = new Order([egg, pancakes], 4);
+            var orderFour = new Order([mexicana, te], 4);
             restaurant.CreateOrder(orderFour);
 
             HelpConsole.Devider(11);
