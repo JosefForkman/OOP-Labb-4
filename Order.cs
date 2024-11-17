@@ -22,7 +22,7 @@ public class Order
         Console.WriteLine("Order items:");
         foreach (var item in _orderItems)
         {
-            Console.WriteLine($"- {item.Name}");
+            Console.WriteLine($"- {item.Name} {item.Price}kr");
         }
     }
 }
